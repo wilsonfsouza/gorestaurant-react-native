@@ -90,6 +90,19 @@ const FoodDetails: React.FC = () => {
     loadFood();
   }, [routeParams]);
 
+  useEffect(() => {
+    async function loadIsFavorite(): Promise<void> {
+      const { data } = await api.get('/favorites');
+
+      const isFoodInFavorites = data.find((food: IFood) => food.id === routeParams.id)
+
+      if (!isFoodInFavorites) return;
+
+      setIsFavorite(true);
+    }
+
+    loadIsFavorite();
+  }, [routeParams]);
 
   function handleIncrementExtra(id: number): void {
     const updatedExtraItems = extras.map((item: Extra) => item.id === id ? { ...item, quantity: item.quantity + 1 } : item);
