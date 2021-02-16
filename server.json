@@ -2,8 +2,8 @@
   "foods": [
     {
       "id": 1,
-      "name": "Ao molho",
-      "description": "Macarrão ao molho branco, fughi e cheiro verde das montanhas.",
+      "name": "Protein Spaghetti",
+      "description": "Red lentils spaguetti with cashew white sauce, beyond chicken meatless, mushrooms, and green onions.",
       "price": 19.9,
       "category": 1,
       "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
@@ -11,44 +11,74 @@
       "extras": [
         {
           "id": 1,
-          "name": "Bacon",
-          "value": 1.5
+          "name": "Daya Cheese",
+          "value": 2
         },
         {
           "id": 2,
-          "name": "Frango",
-          "value": 2
+          "name": "Beyond Chicken",
+          "value": 3
+        },
+        {
+          "id": 3,
+          "name": "Mushrooms",
+          "value": 1.5
         }
       ]
     },
     {
       "id": 2,
-      "name": "Veggie",
-      "description": "Macarrão com pimentão, ervilha e ervas finas colhidas no himalaia.",
-      "price": "21.90",
-      "category": 2,
+      "name": "Vegan Udon",
+      "description": "Stir fried adzuki bean udon with peas, edamame, bell pepper, and house asian sauce",
+      "price": 21.90,
+      "category": 1,
       "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food2.png",
       "thumbnail_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-gorestaurant-mobile/veggie.png",
       "extras": [
         {
-          "id": 3,
-          "name": "Bacon",
+          "id": 1,
+          "name": "Mushrooms",
           "value": 1.5
+        },
+        {
+          "id": 2,
+          "name": "Beyond Chicken",
+          "value": 3
+        },
+        {
+          "id": 3,
+          "name": "Veggies",
+          "value": 3
         }
       ]
     },
     {
       "id": 3,
-      "name": "A la Camarón",
-      "description": "Macarrão com vegetais de primeira linha e camarão dos 7 mares.",
-      "price": "25.90",
-      "category": 3,
-      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png",
-      "thumbnail_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-gorestaurant-mobile/camarao.png",
+      "name": "Jackfruit Spaghetti",
+      "description": "Soybean spaguetti with coconut white sauce, jackfruit meatless, palm hearts, and green onions.",
+      "price": 17.9,
+      "category": 1,
+      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
+      "thumbnail_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-gorestaurant-mobile/ao_molho.png",
       "extras": [
         {
+          "id": 1,
+          "name": "Daya Cheese",
+          "value": 2
+        },
+        {
+          "id": 2,
+          "name": "Jackfruit Meatless",
+          "value": 3.5
+        },
+        {
+          "id": 3,
+          "name": "Palm Hearts",
+          "value": 3
+        },
+        {
           "id": 4,
-          "name": "Bacon",
+          "name": "Mushrooms",
           "value": 1.5
         }
       ]
@@ -57,33 +87,30 @@
   "categories": [
     {
       "id": 1,
-      "title": "Massas",
-      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-gorestaurant-mobile/massas.png"
+      "title": "Pasta"
     },
     {
       "id": 2,
-      "title": "Pizzas",
-      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-gorestaurant-mobile/pizzas.png"
+      "title": "Pizza"
     },
     {
       "id": 3,
-      "title": "Carnes",
-      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-gorestaurant-mobile/carnes.png"
+      "title": "Soup"
     }
   ],
   "orders": [
     {
       "id": 1,
       "product_id": 1,
-      "name": "Ao molho",
-      "description": "Macarrão ao molho branco, fughi e cheiro verde das montanhas.",
+      "name": "Protein Spaghetti",
+      "description": "Red lentils spaguetti with cashew white sauce, beyond chicken meatless, mushrooms, and green onions.",
       "price": 19.9,
       "category": 1,
       "thumbnail_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-gorestaurant-mobile/ao_molho.png",
       "extras": [
         {
-          "id": 4,
-          "name": "Bacon",
+          "id": 1,
+          "name": "Daya Cheese",
           "value": 1.5,
           "quantity": 1
         }
@@ -93,12 +120,34 @@
   "favorites": [
     {
       "id": 2,
-      "name": "Veggie",
-      "description": "Macarrão com pimentão, ervilha e ervas finas colhidas no himalaia.",
-      "price": "21.90",
-      "category": 2,
+      "name": "Vegan Udon",
+      "description": "Stir fried adzuki bean udon with peas, edamame, bell pepper, and house asian sauce",
+      "price": 21.90,
+      "category": 1,
       "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food2.png",
       "thumbnail_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-gorestaurant-mobile/veggie.png"
+    },
+    {
+      "id": 1,
+      "name": "Protein Spaghetti",
+      "description": "Red lentils spaguetti with cashew white sauce, beyond chicken meatless, mushrooms, and green onions.",
+      "price": 19.9,
+      "category": 1,
+      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
+      "thumbnail_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-gorestaurant-mobile/ao_molho.png",
+      "extras": [
+        {
+          "id": 1,
+          "name": "Daya Cheese",
+          "value": 1.5
+        },
+        {
+          "id": 2,
+          "name": "Beyond Chicken",
+          "value": 2
+        }
+      ],
+      "formattedPrice": "USD$19,90"
     }
   ]
 }
