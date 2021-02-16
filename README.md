@@ -13,7 +13,9 @@
 </p>
 
 <h1 align="center">
-    GoRestaurant app
+    <p align="center">
+  <img style="margin-right: 5px; max-width: 400px;" alt="Logo" title="#Logo" src="./docs/assets/logo-github-gorestaurant-vegan.png" width="40%">
+</p>
 </h1>
 
 <h4 align="center">
