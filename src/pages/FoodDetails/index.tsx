@@ -203,7 +203,7 @@ const FoodDetails: React.FC = () => {
           </Food>
         </FoodsContainer>
         <AdditionalsContainer>
-          <Title>Adicionais</Title>
+          <Title>Extras</Title>
           {extras.map(extra => (
             <AdittionalItem key={extra.id}>
               <AdittionalItemText>{extra.name}</AdittionalItemText>
@@ -230,7 +230,7 @@ const FoodDetails: React.FC = () => {
           ))}
         </AdditionalsContainer>
         <TotalContainer>
-          <Title>Total do pedido</Title>
+          <Title>Total</Title>
           <PriceButtonContainer>
             <TotalPrice testID="cart-total">{cartTotal}</TotalPrice>
             <QuantityContainer>
@@ -255,9 +255,9 @@ const FoodDetails: React.FC = () => {
           </PriceButtonContainer>
 
           <FinishOrderButton onPress={() => handleFinishOrder()}>
-            <ButtonText>Confirmar pedido</ButtonText>
+            <ButtonText>Checkout</ButtonText>
             <IconContainer>
-              <Icon name="check-square" size={24} color="#fff" />
+              <Icon name="check-square" size={24} color="#342" />
             </IconContainer>
           </FinishOrderButton>
         </TotalContainer>

@@ -11,7 +11,7 @@ export const Container = styled.View`
 
 export const Header = styled.View`
   padding: 60px 24px 60px;
-  background: #c72828;
+  background: #219653;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -57,8 +57,8 @@ export const CategoryItem = styled.TouchableOpacity<CategoryItemProps>`
   ${props =>
     props.isSelected &&
     css`
-      border-color: #c72828;
-      background-color: #ffebeb;
+      border-color: #219653;
+      background-color: #EBFFF3;
     `}
 `;
 
@@ -90,7 +90,7 @@ export const Food = styled.TouchableOpacity`
 `;
 
 export const FoodImageContainer = styled.View`
-  background: #ffb84d;
+  background: #FFB84D;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   padding: 16px;

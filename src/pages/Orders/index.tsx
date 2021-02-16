@@ -52,7 +52,7 @@ const Orders: React.FC = () => {
   return (
     <Container>
       <Header>
-        <HeaderTitle>Meus pedidos</HeaderTitle>
+        <HeaderTitle>My orders</HeaderTitle>
       </Header>
 
       <FoodsContainer>

@@ -16,7 +16,7 @@ const AppRoutes: React.FC = () => (
     <App.Navigator initialRouteName="Home">
       <App.Screen
         options={{
-          cardStyle: { backgroundColor: '#C72828' },
+          cardStyle: { backgroundColor: '#219653' },
           headerShown: false,
         }}
         name="Home"
@@ -38,25 +38,25 @@ const AppRoutes: React.FC = () => (
             <Icon
               name="arrow-left"
               size={24}
-              color="#FFB84D"
+              color="#FFB84C"
               onPress={() => navigation.goBack()}
             />
           ),
           headerLeftContainerStyle: {
             marginLeft: 24,
           },
-          headerRight: () => <Icon name="heart" size={24} color="#FFB84D" />,
+          headerRight: () => <Icon name="heart" size={24} color="#FFB84C" />,
           headerRightContainerStyle: {
             marginRight: 24,
           },
-          headerTitle: 'Prato - Massas',
+          headerTitle: 'Dish - Pasta',
           headerTitleStyle: {
             color: '#fff',
             fontFamily: 'Poppins-Regular',
             fontSize: 16,
           },
           headerStyle: {
-            backgroundColor: '#C72828',
+            backgroundColor: '#219653',
             elevation: 0,
             borderWidth: 0,
             shadowColor: 'transparent',

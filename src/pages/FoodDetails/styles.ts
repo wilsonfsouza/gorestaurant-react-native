@@ -7,7 +7,7 @@ export const Container = styled.View`
 
 export const Header = styled.View`
   padding: 40px 24px 20px;
-  background: #c72828;
+  background: #219653;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -149,7 +149,7 @@ export const QuantityContainer = styled.View`
 `;
 
 export const FinishOrderButton = styled.TouchableOpacity`
-  background: #39b100;
+  background: #dbb338;
   border-radius: 8px;
   flex-direction: row;
   align-items: center;
@@ -160,13 +160,13 @@ export const ButtonText = styled.Text`
   font-weight: 600;
   font-size: 15px;
   line-height: 22px;
-  color: #fff;
+  color: #342;
   flex: 1;
   text-align: center;
 `;
 
 export const IconContainer = styled.View`
-  background-color: #41c900;
+  background-color: #f2c94c;
   padding: 16px;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;

@@ -20,7 +20,7 @@ export const Title = styled.Text`
 `;
 
 export const NavigationButton = styled.TouchableOpacity`
-  background: #ffb84d;
+  background: #dbb338;
   border-radius: 8px;
   flex-direction: row;
   align-items: center;
@@ -30,13 +30,13 @@ export const ButtonText = styled.Text`
   font-weight: 600;
   font-size: 15px;
   line-height: 22px;
-  color: #7a1818;
+  color: #342;
   flex: 1;
   text-align: center;
 `;
 
 export const IconContainer = styled.View`
-  background-color: #ffc46b;
+  background-color: #f2c94c;
   padding: 16px;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;

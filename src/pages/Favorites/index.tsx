@@ -48,7 +48,7 @@ const Favorites: React.FC = () => {
   return (
     <Container>
       <Header>
-        <HeaderTitle>Meus favoritos</HeaderTitle>
+        <HeaderTitle>My favorites</HeaderTitle>
       </Header>
 
       <FoodsContainer>

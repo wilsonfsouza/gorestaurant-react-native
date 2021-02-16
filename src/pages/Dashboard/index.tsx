@@ -6,6 +6,10 @@ import { useNavigation } from '@react-navigation/native';
 import Logo from '../../assets/logo-header.png';
 import SearchInput from '../../components/SearchInput';
 
+import Pasta from '../../assets/pasta.png';
+import Pizza from '../../assets/pizza.png';
+import Soup from '../../assets/soup.png';
+
 import api from '../../services/api';
 import formatValue from '../../utils/formatValue';
 
@@ -40,7 +44,15 @@ interface IFood {
 interface Category {
   id: number;
   title: string;
-  image_url: string;
+}
+interface IfoodCategoryImagePath {
+  [key: string]: any;
+}
+
+const foodCategoryImagePath: IfoodCategoryImagePath = {
+  'Soup': Soup,
+  'Pasta': Pasta,
+  'Pizza': Pizza
 }
 
 const Dashboard: React.FC = () => {
@@ -116,12 +128,12 @@ const Dashboard: React.FC = () => {
         <SearchInput
           value={searchValue}
           onChangeText={setSearchValue}
-          placeholder="Qual comida você procura?"
+          placeholder="What are you looking for?"
         />
       </FilterContainer>
       <ScrollView>
         <CategoryContainer>
-          <Title>Categorias</Title>
+          <Title>Categories</Title>
           <CategorySlider
             contentContainerStyle={{
               paddingHorizontal: 20,
@@ -139,7 +151,7 @@ const Dashboard: React.FC = () => {
               >
                 <Image
                   style={{ width: 56, height: 56 }}
-                  source={{ uri: category.image_url }}
+                  source={foodCategoryImagePath[category.title]}
                 />
                 <CategoryItemTitle>{category.title}</CategoryItemTitle>
               </CategoryItem>
@@ -147,7 +159,7 @@ const Dashboard: React.FC = () => {
           </CategorySlider>
         </CategoryContainer>
         <FoodsContainer>
-          <Title>Pratos</Title>
+          <Title>Dishes</Title>
           <FoodList>
             {foods.map(food => (
               <Food
